@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <title>Scribble</title>
+        <meta charset="utf-8"/>
+        <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Source+Code+Pro:400,700"/>
+        <link rel="stylesheet" href="web.css"/>
+        <link rel="shortcut icon" href="http://www.scribble.org/imgs/pi-32x32x32.png">
+        <script src="//cdn.jsdelivr.net/ace/1.1.6/min/ace.js" charset="utf-8"></script>
+        <script src="web.js"></script>
+    </head>
+    <body>
+        <img src="http://www.scribble.org/imgs/scribble-banner-1180px.png" alt="Scribble" />
+        <div id="editor"></div>
+        <p id="control">
+            <select id="sample">
+                <option value="">Loading samples...</option>
+            </select>
+            <button id="scribble">Check</button>
+            Protocol:<input type="text" id="proto" value="examples.HelloWorld"/>
+            Role:<input type="text" id="role" value="Me" />
+            <button id="project">Project</button>
+            <button id="graph">Generate Graph</button>
+        </p>
+        <pre id="result" class="highlight"></pre>
+    </body>
+</html>
